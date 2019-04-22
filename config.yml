@@ -1,0 +1,112 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: yes
+configure_sudoers: yes
+configure_terminal: yes
+configure_osx: no
+
+dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo_accept_hostkey: yes
+dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
+dotfiles_files: []
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  # - autoconf
+  - bash-completion
+  - doxygen
+  # - gettext
+  # - gifsicle
+  - git
+  - go
+  # - gpg
+  # - hub
+  - httpie
+  - iperf
+  # - libevent
+  - sqlite
+  # - mcrypt
+  - nmap
+  - node
+  - nvm
+  - php
+  - ssh-copy-id
+  # - cowsay
+  # - readline
+  - openssl
+  # - pv
+  - wget
+  # - wrk
+  - fish
+  - ghq
+  - peco
+  - tree
+  - jq
+  - mas
+  - hadolint
+  - awscli
+  - putty
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - chromedriver
+  - docker
+  # - dropbox
+  - firefox
+  # - google-chrome
+  # - handbrake
+  # - licecap
+  # - limechat
+  # - macvim
+  # - sequel-pro
+  - skitch
+  # - slack
+  # - sublime-text
+  # - transmit
+  - vagrant
+  - synergy
+  - iterm2
+  - alfred
+  - chef/chef/chefdk
+  - postman
+  - microsoft-office
+  # - pomell
+  - skype-for-business
+  - visual-studio-code
+  - appcleaner
+  - rescuetime
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps: ["Microsoft Remote Desktop 10", "Just Focus"]
+mas_email: "hoge"
+mas_password: "hoge"
+
+osx_script: "~/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+  # - name: drush
+  #   state: present # present/absent, default: present
+  #   version: "^8.1" # default: N/A
+gem_packages: []
+  # - name: bundler
+  #   state: present # present/absent/latest, default: present
+  #   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+  # - name: webpack
+  #   state: present # present/absent/latest, default: present
+  #   version: "^2.6" # default: N/A
+pip_packages: []
+  # - name: mkdocs
+  #   state: present # present/absent/latest, default: present
+  #   version: "0.16.3" # default: N/A
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
